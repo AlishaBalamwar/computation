@@ -1,20 +1,20 @@
 import java.util.*;
 import java.lang.Math.*;
-public class uc2{
-	public static void main(String arg[]){
-             	 int x1,x2,y1,y2,a2,a1,b2,b1;
-	         double dis;
+public class uc3{
+        public static void main(String arg[]){
+                 int x1,x2,y1,y2,a2,a1,b2,b1;
+                 double dis;
                  double dis1;
-	         Scanner sc=new Scanner(System.in);
-	         System.out.println("enter x1 point");
+                 Scanner sc=new Scanner(System.in);
+                 System.out.println("enter x1 point");
                  x1=sc.nextInt();
                  System.out.println("enter y1 point");
                  y1=sc.nextInt();
-	         System.out.println("enter x2point");
+                 System.out.println("enter x2point");
                  x2=sc.nextInt();
-	         System.out.println("enter y2 point");
+                 System.out.println("enter y2 point");
                  y2=sc.nextInt();
-		 dis=Math.sqrt((x2-x1)*(x2-x1) + (y2-y1)*(y2-y1));   
+                 dis=Math.sqrt((x2-x1)*(x2-x1) + (y2-y1)*(y2-y1));
                  System.out.println("enter a1 point");
                  a1=sc.nextInt();
                  System.out.println("enter b1 point");
@@ -27,9 +27,13 @@ public class uc2{
                  if(dis==dis1) {
                   System.out.println("Both are equal");
                      }
-                else{
-                     System.out.println("Not equal"); 
+                else if(dis<dis1){
+                     System.out.println("line 1 is lesser than line 2");
                  }
-	}
- 
+                else{
+                    System.out.println("line 2 is lesser than line 1");
+              }
+        }
+
 }
+
